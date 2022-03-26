@@ -12,6 +12,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +34,7 @@ public class SecondActivity extends AppCompatActivity {
         TextView descriptionText = findViewById(R.id.description);
         ImageView pictureView = findViewById(R.id.picture);
         TextView dataText = findViewById(R.id.data);
+        RatingBar ratingBar = findViewById(R.id.ratingBar);
         Bundle arguments = getIntent().getExtras();
 
         if(arguments!=null){
@@ -47,6 +49,10 @@ public class SecondActivity extends AppCompatActivity {
 
             String data = arguments.getString("data");
             dataText.setText(data);
+
+            float rating = arguments.getFloat("rating");
+            ratingBar.setRating(rating);
+
         }
     }
 

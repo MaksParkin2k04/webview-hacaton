@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("description", selectedState.getDescription());
                 intent.putExtra("cover", selectedState.getFlagResource());
                 intent.putExtra("data", selectedState.getData());
+                intent.putExtra("rating", selectedState.getRating());
 
                 startActivity(intent);
             }
