@@ -5,17 +5,19 @@ public class State {
     private String description;  // описание
     private String data; // дата
     private int flagResource; // ресурс флага
-    private float rating; //ресур рейтинга
+    private float rating; //рейтинг
+    private  String url; //ссылка на видео
 
 
 
-    public State(String name, String description, String data ,int flag , float rating){
+    public State(String name, String description, String data ,int flag , float rating, String url){
 
         this.name=name;
         this.description=description;
         this.flagResource=flag;
         this.data=data;
         this.rating=rating;
+        this.url = url;
     }
 
     public String getName() {
@@ -52,6 +54,13 @@ public class State {
 
     public void setRating(float rating) {
         this.rating = rating;
+    }
+    public String getUrl(){
+        return this.url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
 

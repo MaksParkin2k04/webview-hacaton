@@ -53,14 +53,13 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/View"
+        android:id="@+id/buttonView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:onClick="view_click"
         android:text="Смотреть"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +87,7 @@
         android:layout_marginEnd="105dp"
         android:layout_marginBottom="154dp"
         android:numStars="5"
-        app:layout_constraintBottom_toTopOf="@+id/View"
+        app:layout_constraintBottom_toTopOf="@+id/buttonView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
