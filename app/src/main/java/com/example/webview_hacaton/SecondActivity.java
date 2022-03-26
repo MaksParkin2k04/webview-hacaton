@@ -32,6 +32,7 @@ public class SecondActivity extends AppCompatActivity {
         TextView nameText = findViewById(R.id.name);
         TextView descriptionText = findViewById(R.id.description);
         ImageView pictureView = findViewById(R.id.picture);
+        TextView dataText = findViewById(R.id.data);
         Bundle arguments = getIntent().getExtras();
 
         if(arguments!=null){
@@ -44,6 +45,8 @@ public class SecondActivity extends AppCompatActivity {
             int picture = arguments.getInt("cover");
             pictureView.setImageResource(picture);
 
+            String data = arguments.getString("data");
+            dataText.setText(data);
         }
     }
 
