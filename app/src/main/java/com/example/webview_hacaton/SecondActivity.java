@@ -3,6 +3,7 @@ package com.example.webview_hacaton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -44,5 +45,10 @@ public class SecondActivity extends AppCompatActivity {
             pictureView.setImageResource(picture);
 
         }
+    }
+
+    public void view_click(View view) {
+        Intent intent = new Intent(SecondActivity.this, Activity_View.class);
+        startActivity(intent);
     }
 }

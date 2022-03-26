@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("name", selectedState.getName());
                 intent.putExtra("description", selectedState.getDescription());
                 intent.putExtra("cover", selectedState.getFlagResource());
+
                 startActivity(intent);
             }
         };countriesList.setOnItemClickListener(itemListener);
