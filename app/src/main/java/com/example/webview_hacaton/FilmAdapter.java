@@ -15,7 +15,7 @@ import java.util.List;
 
 public class FilmAdapter extends ArrayAdapter<Film> {
 
-    public static final int MAX_DESCRIPTION_VALUE = 250;
+    public static final int MAX_DESCRIPTION_VALUE = 150;
 
     private final LayoutInflater inflater;
     private final int layout;
