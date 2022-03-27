@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         // устанавливаем адаптер
         filmList.setAdapter(filmAdapter);
         // слушатель выбора в списке
+
         AdapterView.OnItemClickListener itemListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {

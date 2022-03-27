@@ -15,9 +15,11 @@ import java.util.List;
 
 public class FilmAdapter extends ArrayAdapter<Film> {
 
-    private LayoutInflater inflater;
-    private int layout;
-    private List<Film> films;
+    public static final int MAX_DESCRIPTION_VALUE = 250;
+
+    private final LayoutInflater inflater;
+    private final int layout;
+    private final List<Film> films;
 
     public FilmAdapter(Context context, int resource, List<Film> films) {
         super(context, resource, films);
@@ -31,7 +33,7 @@ public class FilmAdapter extends ArrayAdapter<Film> {
 
         ImageView flagView = view.findViewById(R.id.flag);
         TextView nameView = view.findViewById(R.id.name);
-        TextView capitalView = view.findViewById(R.id.description);
+        TextView descriptionView = view.findViewById(R.id.description);
         TextView dataView = view.findViewById(R.id.data);
         RatingBar ratingBarList  = view.findViewById(R.id.ratingBarList);
 
@@ -41,16 +43,19 @@ public class FilmAdapter extends ArrayAdapter<Film> {
         dataView.setText(film.getData());
         nameView.setText(film.getName());
 
-        String description = film.getDescription();
-        if(description.length()>250){
-            description = description.substring(0, 250) + "...";
-
-        }
-
-        capitalView.setText(description);
+        String description =getSubstring(film.getDescription(), MAX_DESCRIPTION_VALUE);
+        descriptionView.setText(description);
         ratingBarList.setRating(film.getRating());
 
 
         return view;
+    }
+
+    private String getSubstring(String value, int maxValue){
+        String result = value;
+        if(result.length()>maxValue){
+            result = result.substring(0, maxValue-3) + "...";
+        }
+        return result;
     }
 }

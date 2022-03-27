@@ -11,12 +11,12 @@ public class Film {
         this.url = url;
     }
 
-    private String name; // название
-    private String description;  // описание
-    private String data; // дата
-    private int flagResource; // ресурс флага
-    private float rating; //рейтинг
-    private  String url; //ссылка на видео
+    private final String name; // название
+    private  final String description;  // описание
+    private final String data; // дата
+    private final int flagResource; // ресурс флага
+    private final float rating; //рейтинг
+    private  final String url; //ссылка на видео
 
     public String getName() {
         return name;

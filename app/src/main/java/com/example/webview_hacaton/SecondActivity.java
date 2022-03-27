@@ -16,6 +16,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_second);
         TextView nameText = findViewById(R.id.name);
         TextView descriptionText = findViewById(R.id.description);
@@ -43,10 +44,10 @@ public class SecondActivity extends AppCompatActivity {
             float rating = arguments.getFloat("rating");
             ratingBar.setRating(rating);
 
-            String url = arguments.getString("url");
+
             viewButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-
+                    String url = arguments.getString("url");
                     Intent intent = new Intent(SecondActivity.this, Activity_View.class);
                     intent.putExtra("url", url);
                     startActivity(intent);
