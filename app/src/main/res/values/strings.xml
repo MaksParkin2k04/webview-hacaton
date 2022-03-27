@@ -3,4 +3,6 @@
     <string name="desc">desc</string>
     <string name="view_button">Смотреть</string>
     <string name="desc_o">desc_o</string>
+    <string name="rating">рейтинг</string>
+    <string name="picture">картинка</string>
 </resources>
