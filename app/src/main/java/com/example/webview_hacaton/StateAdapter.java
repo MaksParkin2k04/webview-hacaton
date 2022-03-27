@@ -39,7 +39,8 @@ public class StateAdapter extends ArrayAdapter<State> {
         flagView.setImageResource(state.getFlagResource());
         dataView.setText(state.getData());
         nameView.setText(state.getName());
-        capitalView.setText(state.getDescription());
+
+        capitalView.setText(state.getDescription().substring(0, 250) + "...");
         ratingBarList.setRating(state.getRating());
 
 
