@@ -7,7 +7,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/flag"
+        android:id="@+id/picture"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="156dp"
@@ -31,7 +31,7 @@
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/flag"
+        app:layout_constraintBottom_toTopOf="@+id/picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flag"
+        app:layout_constraintTop_toBottomOf="@+id/picture"
         tools:text="Дата" />
 
     <RatingBar
