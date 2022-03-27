@@ -51,6 +51,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="38dp"
+        android:contentDescription="@string/picture"
         android:gravity="center"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/description"
@@ -100,12 +101,15 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:contentDescription="@string/rating"
         android:gravity="center"
+        android:isIndicator="true"
         android:numStars="5"
         app:layout_constraintBottom_toTopOf="@+id/buttonView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description"
-        app:layout_constraintVertical_bias="0.133" />
+        app:layout_constraintVertical_bias="0.133"
+        android:theme="@style/Theme.WebViewhacaton"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
