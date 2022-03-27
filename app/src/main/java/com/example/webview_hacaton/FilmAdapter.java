@@ -1,7 +1,6 @@
 package com.example.webview_hacaton;
 
 import android.content.Context;
-import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,17 +9,19 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.example.webview_hacaton.data.Film;
+
 import java.util.List;
 
-public class StateAdapter extends ArrayAdapter<State> {
+public class FilmAdapter extends ArrayAdapter<Film> {
 
     private LayoutInflater inflater;
     private int layout;
-    private List<State> states;
+    private List<Film> films;
 
-    public StateAdapter(Context context, int resource, List<State> states) {
-        super(context, resource, states);
-        this.states = states;
+    public FilmAdapter(Context context, int resource, List<Film> films) {
+        super(context, resource, films);
+        this.films = films;
         this.layout = resource;
         this.inflater = LayoutInflater.from(context);
     }
@@ -34,14 +35,20 @@ public class StateAdapter extends ArrayAdapter<State> {
         TextView dataView = view.findViewById(R.id.data);
         RatingBar ratingBarList  = view.findViewById(R.id.ratingBarList);
 
-        State state = states.get(position);
+        Film film = films.get(position);
 
-        flagView.setImageResource(state.getFlagResource());
-        dataView.setText(state.getData());
-        nameView.setText(state.getName());
+        flagView.setImageResource(film.getFlagResource());
+        dataView.setText(film.getData());
+        nameView.setText(film.getName());
 
-        capitalView.setText(state.getDescription().substring(0, 250) + "...");
-        ratingBarList.setRating(state.getRating());
+        String description = film.getDescription();
+        if(description.length()>250){
+            description = description.substring(0, 250) + "...";
+
+        }
+
+        capitalView.setText(description);
+        ratingBarList.setRating(film.getRating());
 
 
         return view;
