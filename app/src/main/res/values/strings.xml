@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">WebView-hacaton</string>
+    <string name="app_name">hacaton</string>
+    <string name="desc">desc</string>
+    <string name="view_button">Смотреть</string>
+    <string name="desc_o">desc_o</string>
 </resources>

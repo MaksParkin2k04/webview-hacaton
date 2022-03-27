@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/maxim/Desktop/WebViewhacaton/app/src/main/res/drawable/inset.xml" value="0.240625" />
         <entry key="..\:/Users/maxim/Desktop/WebViewhacaton/app/src/main/res/layout/activity_main.xml" value="0.21041666666666667" />
-        <entry key="..\:/Users/maxim/Desktop/WebViewhacaton/app/src/main/res/layout/activity_second.xml" value="0.25" />
+        <entry key="..\:/Users/maxim/Desktop/WebViewhacaton/app/src/main/res/layout/activity_second.xml" value="0.16" />
         <entry key="..\:/Users/maxim/Desktop/WebViewhacaton/app/src/main/res/layout/activity_view.xml" value="0.10916919959473151" />
         <entry key="..\:/Users/maxim/Desktop/WebViewhacaton/app/src/main/res/layout/list_item.xml" value="0.25" />
       </map>

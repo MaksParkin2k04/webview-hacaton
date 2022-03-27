@@ -17,7 +17,8 @@
         app:layout_constraintBottom_toTopOf="@+id/data"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:contentDescription="@string/desc"/>
 
     <TextView
         android:id="@+id/name"
@@ -28,12 +29,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
-        android:text="Название"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/flag"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Название" />
 
     <TextView
         android:id="@+id/description"
@@ -43,14 +45,15 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Описание"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/ratingBarList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/data"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Описание" />
 
     <TextView
         android:id="@+id/data"
@@ -59,12 +62,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Дата"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/flag"
-        android:gravity="center"/>
+        tools:text="Дата" />
 
     <RatingBar
         android:id="@+id/ratingBarList"
